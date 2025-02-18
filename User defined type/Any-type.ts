@@ -1,5 +1,4 @@
-let userName: any;
-userName = "name";
-userName = 123;
-userName = true;
-console.log(userNamets);
+let nasimName: any;
+nasimName = "he is nasim";
+nasimName = 123;
+nasimName = false;
