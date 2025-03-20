@@ -1,34 +1,62 @@
-// let user1: { userName: string; userID: number };
-// user1 = { userName: "abir", userID: 123 };
+let user1: { name: string; id: number };
 
+user1 = {
+  name: "askdosflk ASDFKN",
+  id: 12,
+};
 // console.log(user1);
 
-// let users: object[];
-// users = [
-//   { name: "msi", id: 123 },
-//   { name: "value top", id: 223 },
-//   { name: "dahua", id: 333 },
-// ];
+let user2: object;
 
-// console.log(users);
+user2 = {
+  name: "ashiful islam",
+  id: 12,
+  isregistered: false,
+};
+// console.log(user2);
 
-let users: object[];
+let user3: object[];
 
-users = [
-  //   { name: "ashiful islam", id: 12 },
-  //   { name: "ariful islam", id: 22 },
+user3 = [
+  {
+    name: "rashedul islam",
+    age: 21,
+    isregistered: false,
+  },
+  {
+    name: "nasim mahmud",
+    age: 43,
+    isregistered: true,
+  },
+  {
+    name: "amit hasan",
+    age: 12,
+    isregistered: true,
+  },
 ];
 
-let user1: { userName: string; id?: number };
-user1 = { userName: "ashiful", id: 12 };
-users.push(user1);
+// console.log(user3[2]);
 
-let user2: { userName: string; id?: number };
-user2 = { userName: "rabbi", id: 341 };
-users.push(user2);
+////////////////         object array //////////////
 
-// console.log(users);
+let users: object[];
+users = [];
+let user4: { username: string; id: number };
+user4 = {
+  username: "asad",
+  id: 12,
+};
+users.push(user4);
+////////////////         object array (optional value) //////////////
+
+let user5: { username: string; id?: number };
+user5 = {
+  username: "ohid vai",
+};
 for (const key in users) {
-  console.log(users[key]);
-  console.log(users[key]["userName"]);
+    console.log(users[key]["username"]);
+    
 }
+// console.log(user5);
+users.push(user5);
+console.log(users);

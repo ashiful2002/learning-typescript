@@ -1,32 +1,65 @@
-type userType = { userName: string; id?: number };
-let users: userType[];
+////////////////         object array //////////////
+type User = { username: string; id?: number };
+
+let users: User[];
 users = [];
 
-let user1: userType;
-user1 = { userName: "ashiful", id: 12 };
+let user1: User;
+user1 = {
+  username: "asad",
+  id: 12,
+};
 users.push(user1);
+////////////////         object array (optional value) //////////////
 
-let user2: userType;
-user2 = { userName: "rabbi", id: 341 };
+let user2: User;
+user2 = {
+  username: "ohid vai",
+};
 users.push(user2);
+let user3: User;
+user3 = {
+  username: "masud vai",
+};
 
-let user3: userType;
-user3 = { userName: "rafi", id: 33333 };
 users.push(user3);
+
+for (const key in users) {
+  console.log(users[key]["username"]);
+}
+// console.log(user5);
 
 // console.log(users);
 
-// for (const key in users) {
-//   console.log(users[key]);
-//   //   console.log(users[key]["userName"]);
+/////////////////////////        CREATING OWN CUSTOM TYPE    /////////////////
+
+// type RequestType = "GET" | "POST";
+
+// let getRequest: RequestType;
+
+// getRequest = "GET";
+
+// function reqHandeller(params: RequestType) {
+//   console.log(params);
 // }
 
-type requestType = "GET" | "POST";
-let getReQuest: requestType;
-getReQuest = "POST";
-// console.log(getReQuest);
+// reqHandeller("GET");
 
-function Reqhandeller(requestType: requestType) {
-  console.log(requestType);
-}
-Reqhandeller("GET");
+type newType = {
+  name: string;
+  age: number;
+  isLoggedIn: boolean;
+};
+let myAppUser: newType[];
+myAppUser = [];
+let user23: newType;
+
+user23 = {
+  name: "nmumber",
+  age: 12,
+  isLoggedIn: false,
+};
+
+myAppUser.push(user23);
+
+console.log(myAppUser);

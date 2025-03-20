@@ -1,18 +1,32 @@
 var users;
 users = [];
 var user1;
-user1 = { userName: "ashiful", id: 12 };
+user1 = {
+    username: "asad",
+    id: 12,
+};
 users.push(user1);
+////////////////         object array (optional value) //////////////
 var user2;
-user2 = { userName: "rabbi", id: 341 };
+user2 = {
+    username: "ohid vai",
+};
 users.push(user2);
 var user3;
-user3 = { userName: "rafi", id: 33333 };
+user3 = {
+    username: "masud vai",
+};
 users.push(user3);
-var getReQuest;
-getReQuest = "POST";
-// console.log(getReQuest);
-function Reqhandeller(requestType) {
-    console.log(requestType);
+for (var key in users) {
+    console.log(users[key]["username"]);
 }
-Reqhandeller("GET");
+var myAppUser;
+myAppUser = [];
+var user23;
+user23 = {
+    name: "nmumber",
+    age: 12,
+    isLoggedIn: false,
+};
+myAppUser.push(user23);
+console.log(myAppUser);
